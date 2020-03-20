@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  background-color: #FFB14A;
+  /* background-color: #FFB14A; */
+  background-image: linear-gradient(#FFB14A, #C97E91, #8EB0AE, #C9E491, #FFE976, #D6C3FF, #CDFFFF);
   font-family: arial;
   font-weight: 900;
 }
@@ -23,6 +24,10 @@ nav {
   border-bottom: 2.5px solid #2B3A4C;
   margin: 0px;
   background-color: #FFB14A
+}
+
+.active {
+  color: pink;
 }
 
 .navbar {
@@ -67,42 +72,36 @@ nav {
 }
 
 .flower1 {
-  width: 130px;
   height: 130px;
   position: absolute;
   margin: 100px 0px 0px 350px;
 }
 
 .flower1-about {
-  width: 130px;
   height: 130px;
   position: absolute;
   margin: 50px 0px 0px 50px;
 }
 
 .flower2 {
-  width: 180px;
   height: 180px;
   position: absolute;
   margin: 100px 0px 0px 1200px;
 }
 
 .flower2-about {
-  width: 180px;
   height: 180px;
   position: absolute;
   margin: 400px 0px 0px 1200px;
 }
 
 .flower3 {
-  width: 170px;
   height: 170px;
   position: absolute;
   margin: 500px 0px 0px 10px;
 }
 
 .flower4 {
-  width: 170px;
   height: 170px;
   position: absolute;
   margin: 450px 0px 0px 900px;
@@ -112,6 +111,8 @@ nav {
   font-size: 45px;
   color: #2B3A4C;
   margin: 80px 0px, 0px, 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .page-wrapper {
@@ -222,15 +223,94 @@ nav {
 }
 
 .flower2-projects {
-  width: 110px;
   height: 110px;
   position: absolute;
   margin: 10px 0px 0px 1300px;
 }
 
 .flower4-projects {
-  width: 70px;
   height: 70px;
   position: absolute;
   margin: 290px 0px 0px 10px;
+}
+
+.experience-wrapper {
+  margin: 35px 150px;
+}
+
+.experience-block {
+  margin: 12px 0 12px 0;
+  color: #2B3A4C;
+}
+
+.experience-title {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+}
+
+.experience-heading {
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.experience-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 6px 0 0 0;
+}
+
+.experience-line {
+  border: 0.5px solid #2B3A4C;
+}
+
+.flower1-experience {
+  height: 110px;
+  position: absolute;
+  margin: 50px 0px 0px 20px;
+}
+
+.flower3-experience {
+  height: 80px;
+  position: absolute;
+  margin: 5px 0px 0px 1000px;
+  transform: rotate(-50deg);
+}
+
+.flower4-experience {
+  height: 90px;
+  position: absolute;
+  margin: 450px 0px 0px 1310px;
+}
+
+.flower1-hello {
+  height: 400px;
+  position: absolute;
+  margin: 200px 0px 0px 1000px;
+}
+
+.flower1-hello2 {
+  height: 480px;
+  position: absolute;
+  margin: 0px 0px 0px 0px;
+  transform: rotate(-50deg);
+}
+
+.hello-wrapper {
+  text-align: center;
+  margin: 200px;
+}
+
+.hello-title {
+  font-size: 45px;
+  color: #2B3A4C;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+}
+
+.link-image {
+  height: 70px;
 }
