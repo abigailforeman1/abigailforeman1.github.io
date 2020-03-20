@@ -154,28 +154,83 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 50px 200px;
+  margin: 50px 110px;
+}
+
+.skill-box {
+  text-align: center;
+  margin: 0 0 25px 0;
 }
 
 .icon {
-  height: 120px;
-  width: 120px;
-  margin: 20px;
-  font-size: 100px;
+  margin: 40px 50px 15px 50px;
+  font-size: 75px;
   color: #2B3A4C;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills-header {
-  display: flex;
-  justify-content: center;
 }
 
 .skills-title {
   font-size: 15px;
   color: #2B3A4C;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 0 0;
+}
+
+.project-box {
+  display: flex;
+  justify-content: center;
   margin: 10px;
-  padding:  10px;
+}
+
+.project-img {
+  width: 350px;
+  margin: 20px 0;
+}
+
+.project-text {
+  width: 310px;
+  margin: 0 0 0 10px;
+  align-self: center;
+  color: #2B3A4C;
+}
+
+.project-title {
+  font-size: 23px;
+}
+
+.project-skills {
+  font-size: 15px;
+}
+
+.project-info {
+  font-size: 12px;
+  margin: 0 0 5px 0;
+  font-weight: 500;
+}
+
+.project-link {
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #2B3A4C;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 0 5px 5px 0;
+}
+
+.flower2-projects {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  margin: 10px 0px 0px 1300px;
+}
+
+.flower4-projects {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  margin: 290px 0px 0px 10px;
 }
