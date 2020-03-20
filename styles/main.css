@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFB14A;
+  font-family: arial;
+  font-weight: 900;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px;
+  border-bottom: 2.5px solid #2B3A4C;
+  margin: 0px;
+  background-color: #FFB14A
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navitem, a {
+  list-style: none;
+  font-size: 45px;
+  color: #2B3A4C;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero, .about, .projects, .skills, .experience, .sayhello {
+  width: 100%;
+  display: flex;
+}
+
+.page-section {
+  padding: 74.5px 0px;
+}
+
+.wrapper {
+  justify-content: center;
+  align-self: center;
+  margin: 200px;
+}
+
+.hero-text {
+  color: #2B3A4C;
+  font-size: 45px;
+  margin: 30px 0px 0px 0px;
+}
+
+.custom-link {
+  text-decoration: underline;
+}
+
+.flower1 {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  margin: 100px 0px 0px 350px;
+}
+
+.flower1-about {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  margin: 50px 0px 0px 50px;
+}
+
+.flower2 {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  margin: 100px 0px 0px 1200px;
+}
+
+.flower2-about {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  margin: 400px 0px 0px 1200px;
+}
+
+.flower3 {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  margin: 500px 0px 0px 10px;
+}
+
+.flower4 {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  margin: 450px 0px 0px 900px;
+}
+
+.title {
+  font-size: 45px;
+  color: #2B3A4C;
+  margin: 80px 0px, 0px, 0px;
+}
+
+.page-wrapper {
+  display: flex;
+  margin: 100px;
+  justify-content: center;
+}
+
+.about-text-wrapper {
+  width: 500px;
+  margin: 0px 40px;
+  align-self: center;
+}
+
+.test-border {
+  border: 1px solid blue;
+}
+
+.about-text {
+  font-family: arial;
+  font-weight: 900;
+  color: #2B3A4C;
+  font-size: 20px;
+}
+
+.profile-pic {
+  height: 480px;
+}
+
+.small-text {
+  font-family: arial;
+  font-weight: 900;
+  color: #2B3A4C;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 200px;
+}
+
+.icon {
+  height: 120px;
+  width: 120px;
+  margin: 20px;
+  font-size: 100px;
+  color: #2B3A4C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-header {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-title {
+  font-size: 15px;
+  color: #2B3A4C;
+  margin: 10px;
+  padding:  10px;
+}
