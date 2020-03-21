@@ -10,12 +10,17 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
   <!-- Nav -->
   <nav>
     <ul class="navbar" id="navbar">
+      <!-- <li class="navitem navbar-flower">
+        <a href="#hero"><img class="navbar-flower" src="./assets/navbar_flower.png" alt="flower"></a>
+      </li> -->
       <li class="navitem">
         <a class="navtext" href="#about">ABOUT</a>
       </li>
@@ -34,7 +39,7 @@
     </ul>
   </nav>
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div>
       <img class="flower1" src="./assets/flower-01.png" alt="flower">
     </div>
@@ -64,7 +69,7 @@
     <div class="page-wrapper">
       <div class="">
         <img class="profile-pic" src="./assets/portfolio_pic.png" alt="photo of me in Wales">
-        <h4 class="small-text">climbing Sugarloaf Mountain in Wales!</h4>
+        <h4 class="small-text">Climbing Sugarloaf Mountain in Wales!</h4>
       </div>
       <div class="about-text-wrapper">
         <p class="about-text">My passion for digital content creation and design led me to enrol in General Assembly’s
@@ -168,16 +173,15 @@
     </div>
     <div class="projects-wrapper">
       <div class="project-box">
-        <img class="project-img" src="./assets/spaceinvaders-01.png" alt="">
+        <img class="project-img" src="./assets/spaceinvaders-01.png" alt="spaceinvaders">
         <div class="project-text">
           <h1 class="project-title">Space Invaders</h1>
           <br />
           <h2 class="project-skills">HTML, CSS, JavaScript</h2>
           <br />
-          <p class="project-info">I chose to build the classic arcade game Space Invaders for my first solo
-            project. This lasted 9 days and utilised array movement on a grid, set
-            intervals and local storage for
-            score keeping.</p>
+          <p class="project-info">I chose to build the classic arcade game Space Invaders for my first solo project with
+            HTML, CSS and Vanilla JavaScript. This lasted 9 days and utilised array movement on a grid, set intervals
+            and local storage for score keeping.</p>
           <br />
           <div class="links">
             <a class="project-link" target="_blank" href="https://abigailforeman1.github.io/sei-project-1/">Open
@@ -189,17 +193,17 @@
       </div>
 
       <div class="project-box">
-        <img class="project-img" src="./assets/cocktailclub-01.png" alt="">
+        <img class="project-img" src="./assets/cocktailclub-01.png" alt="cocktail club">
         <div class="project-text">
           <h1 class="project-title">The Cocktail Club</h1>
           <br />
           <h2 class="project-skills">JavaScript, React.js, Bulma</h2>
           <br />
-          <p class="project-info">My first pair-programming project was completed in 48 hours and consumed a public API.
-            for users to search for
-            cocktails,ingredients and recipes. I focused on building the frontend components,
-            styling, and the implementation of a cocktail special randomiser feature.
-          </p>
+          <p class="project-info">My first pair-programming project was completed in 48 hours and consumed a public API
+            called TheCocktailDB. Together we planned and built our React app which allowed users to search for
+            cocktails and see an ingredients list and recipes. I focused on building out the frontend components,
+            styling with Bulma and Sass, and the implementation of a cocktail randomiser feature that allowed users to
+            find their ‘cocktail special’.</p>
           <br />
           <div class="links">
             <a class="project-link" target="_blank" href="https://the-cocktail-club.herokuapp.com/">Open
@@ -211,17 +215,17 @@
       </div>
 
       <div class="project-box">
-        <img class="project-img" src="./assets/beehive-01.png" alt="">
+        <img class="project-img" src="./assets/beehive-01.png" alt="beehive">
         <div class="project-text">
           <h1 class="project-title">Beehive</h1>
           <br />
           <h2 class="project-skills">JavaScript, React, Node.js, Express, Bulma</h2>
           <br />
-          <p class="project-info">In a team of 4 we built a full stack MERN app in 1 week called Beehive. Users
-            can search for creative projects and other users to collaborate with. I focused on building the
-            project and user backend model components, creating better error
+          <p class="project-info">My team of 4 built a full stack MERN app in 1 week called Beehive, which allows users
+            within the creative industry to search for projects and other creatives to collaborate with. My main
+            responsibilities were building the project and user backend model components, creating better error
             handling, helping to build the frontend homepage, user profile page, project profile page and search page
-            and leading the styling.</p>
+            and leading the team with styling.</p>
           <br />
           <div class="links">
             <a class="project-link" target="_blank" href="https://beehive-project-3.herokuapp.com">Open
@@ -233,17 +237,17 @@
       </div>
 
       <div class="project-box">
-        <img class="project-img" src="./assets/interview-01.png" alt="">
+        <img class="project-img" src="./assets/interview-01.png" alt="interview story">
         <div class="project-text">
           <h1 class="project-title">Interview Story</h1>
           <br />
           <h2 class="project-skills">Python, Django, Create React, JavaScript, Bootstrap</h2>
           <br />
-          <p class="project-info">In a team of 2 we had 1 week to build a full stack app where users experience a
-            developer interview that combines luck and Boolean logic to determine their outcome.
-            My main responsibilities were building the backend functionality, styling and building the frontend user
-            profile pages and user edit page with React.
-          </p>
+          <p class="project-info">In a team of 2, we built a full stack application that allows users to experience a
+            Junior Developer interview that combines both luck and Boolean logic to determine if they are successful or
+            not. My main responsibilities were building the backend functionality with Django and Python, styling the
+            website with Bootstrap and building the frontend user profile pages and user edit page with React. This
+            project lasted for 1 week.</p>
           <br />
           <div class="links">
             <a class="project-link" target="_blank" href="https://interview-story-project4.herokuapp.com">Open
@@ -270,7 +274,7 @@
     <div class="experience-wrapper">
       <div class="experience-block">
         <h1 class="experience-title">Software Engineering Immersive Student, December 2019 - March 2020</h1>
-        <a class="experience-heading" href="https://generalassemb.ly/">General Assembly - London</a>
+        <a class="experience-heading" target="_blank" href="https://generalassemb.ly/">General Assembly - London</a>
         <p class="experience-text">As a SEI student at General Assembly, I learnt to build interactive, full stack apps
           with key programming languages and frameworks over the 12-week course. I developed my problem-solving skills
           by
@@ -281,7 +285,8 @@
       <hr class="experience-line" />
       <div class="experience-block">
         <h1 class="experience-title">Co-founder and Illustrator, October 2017 - Present</h1>
-        <a class="experience-heading" href="https://www.instagram.com/missgloriadesign/">Miss Gloria Design - London</a>
+        <a class="experience-heading" target="_blank" href="https://www.instagram.com/missgloriadesign/">Miss Gloria
+          Design - London</a>
         <p class="experience-text">Set up a feminist design Instagram account that features illustrations about female
           empowerment, self-love, body positivity, period poverty and mental health. Clients include Primark, Vogue,
           Missguided, ELLE, World Child Cancer and AFSP.</p>
@@ -289,7 +294,8 @@
       <hr class="experience-line" />
       <div class="experience-block">
         <h1 class="experience-title">Junior Digital Executive, February 2018 - November 2019</h1>
-        <a class="experience-heading" href="https://zerotwenty.co.uk/">zero twenty & Percolate - London</a>
+        <a class="experience-heading" target="_blank" href="https://zerotwenty.co.uk/">zero twenty & Percolate -
+          London</a>
         <p class="experience-text">Managed the social platforms for a number of clients involving content creation,
           copywriting, scheduling and feedback using social analytics. Led the creative marketing for the Kerb music
           festival ‘Jam on Rye’ which sold 3,500 tickets and engaged 1.2 million users on social media. Mentored social
@@ -298,7 +304,8 @@
       <hr class="experience-line" />
       <div class="experience-block">
         <h1 class="experience-title">Freelance Digital Content Creator, January 2018 - July 2019</h1>
-        <a class="experience-heading" href="https://brainchildfestival.co.uk/">Brainchild Festival - East Sussex</a>
+        <a class="experience-heading" target="_blank" href="https://brainchildfestival.co.uk/">Brainchild Festival -
+          East Sussex</a>
         <p class="experience-text">Worked alongside the Marketing Manager and collaborated with other designers to
           deliver
           fun and engaging social media graphics and GIFs using the festival’s brand guidelines.</p>
@@ -306,7 +313,7 @@
       <hr class="experience-line" />
       <div class="experience-block">
         <h1 class="experience-title">Freelance Graphic Designer, June 2018 - June 2019</h1>
-        <a class="experience-heading" href="https://www.femmeculture.com/">femme culture - London</a>
+        <a class="experience-heading" target="_blank" href="https://www.femmeculture.com/">femme culture - London</a>
         <p class="experience-text">Designed posters and social media assets for the emerging record label’s club nights.
           Designed the 2019 Heforshe x UN Women x femme culture compilation artwork that calls for people to stand
           together
@@ -323,23 +330,29 @@
       <img class="flower1-hello2" src="./assets/flower-01.png" alt="flower">
     </div>
     <div class="hello-wrapper">
-      <h1 class="hello-title">get in touch:</h1>
+      <h1 class="hello-title">get in touch</h1>
       <div class="contact-links">
-        <a href="mailto:abigailforeman@outlook.com">
+        <a href="mailto:abigailforeman@outlook.com" target="_blank">
           <img class="link-image" src="./assets/email-01.png" alt="email icon">
         </a>
-        <a href="https://www.linkedin.com/in/abigail-foreman-11b541b7/">
+        <a href="https://www.linkedin.com/in/abigail-foreman-11b541b7/" target="_blank">
           <img class="link-image" src="./assets/linkedin-01.png" alt="linkedin icon">
         </a>
-        <a href="https://github.com/abigailforeman1">
+        <a href="https://github.com/abigailforeman1" target="_blank">
           <img class="link-image" src="./assets/github-01.png" alt="github icon">
         </a>
-        <a href="https://twitter.com/AbigailForeman1">
+        <a href="https://twitter.com/AbigailForeman1" target="_blank">
           <img class="link-image" src="./assets/twitter-01.png" alt="twitter icon">
         </a>
       </div>
     </div>
+    <div class="start-button-wrapper">
+      <a class="start-button" href="#hero">back to the top</a>
+    </div>
   </section>
+  <script>
+      ScrollReveal().reveal('.project-img', { duration: 1000, distance: '50px', delay: 400, reset: true });
+      </script>
 </body>
 
 </html>

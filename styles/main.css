@@ -13,6 +13,7 @@ body {
   background-image: linear-gradient(#FFB14A, #C97E91, #8EB0AE, #C9E491, #FFE976, #D6C3FF, #CDFFFF);
   font-family: arial;
   font-weight: 900;
+  /* cursor: url(../assets/favicon.png), auto; */
 }
 
 nav {
@@ -27,7 +28,11 @@ nav {
 }
 
 .active {
-  color: pink;
+  color: #FFEBF9;
+}
+
+a:hover {
+  color: #FFEBF9;
 }
 
 .navbar {
@@ -40,6 +45,11 @@ nav {
   font-size: 45px;
   color: #2B3A4C;
   text-decoration: none;
+}
+
+.navbar-flower {
+  height: 40px;
+  margin: 0;
 }
 
 .hero {
@@ -178,7 +188,7 @@ nav {
 .projects-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0 0 0;
+  margin: 20px 80px;
 }
 
 .project-box {
@@ -188,13 +198,12 @@ nav {
 }
 
 .project-img {
-  width: 350px;
+  max-width: 450px;
   margin: 20px 0;
 }
 
 .project-text {
-  width: 310px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
   align-self: center;
   color: #2B3A4C;
 }
@@ -208,9 +217,10 @@ nav {
 }
 
 .project-info {
-  font-size: 12px;
+  font-size: 15px;
   margin: 0 0 5px 0;
   font-weight: 500;
+  line-height: 20px;
 }
 
 .project-link {
@@ -229,9 +239,9 @@ nav {
 }
 
 .flower4-projects {
-  height: 70px;
+  height: 120px;
   position: absolute;
-  margin: 290px 0px 0px 10px;
+  margin: 300px 0px 0px 1000px;
 }
 
 .experience-wrapper {
@@ -304,6 +314,7 @@ nav {
 .hello-title {
   font-size: 45px;
   color: #2B3A4C;
+  margin: 0 0 10px 0;
 }
 
 .contact-links {
@@ -313,4 +324,70 @@ nav {
 
 .link-image {
   height: 70px;
+}
+
+.link-image:hover {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.start-button {
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #2B3A4C;
+  border-radius: 10px;
+  padding: 7px;  
+}
+
+.start-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.start-button:hover, .project-link:hover {
+  background-color: #2B3A4C;
+  color: #FFEBF9;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+
+  .navitem, a {
+    font-size: 25px;
+  }
+
+  .flower2, .flower4, .flower4-experience, .flower1-hello2, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-hello, .flower1-about {
+    display: none;
+  }
+
+  .hero-text, .custom-link {
+    font-size: 40px;
+  }
+
+  .profile-pic {
+    height: 100px;
+  }
+
 }
