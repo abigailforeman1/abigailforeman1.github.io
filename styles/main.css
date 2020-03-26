@@ -27,14 +27,16 @@ nav {
   background-color: #FFB14A
 }
 
+/* link styling  */
 .active {
-  color: #FFEBF9;
+  font-style: italic;
 }
 
 a:hover {
   color: #FFEBF9;
 }
 
+/* navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,11 +49,7 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar-flower {
-  height: 40px;
-  margin: 0;
-}
-
+/* making the landing page section full height of page */
 .hero {
   height: 100vh;
 }
@@ -61,6 +59,7 @@ a:hover {
   display: flex;
 }
 
+/* adding padding the height of the navbar to ensure all sections take up 100vh of screen */
 .page-section {
   padding: 74.5px 0px;
 }
@@ -232,7 +231,7 @@ a:hover {
   margin: 0 5px 5px 0;
 }
 
-.flower2-projects {
+/* .flower2-projects {
   height: 110px;
   position: absolute;
   margin: 10px 0px 0px 1300px;
@@ -242,7 +241,7 @@ a:hover {
   height: 120px;
   position: absolute;
   margin: 300px 0px 0px 1000px;
-}
+} */
 
 .experience-wrapper {
   margin: 35px 150px;
@@ -255,26 +254,33 @@ a:hover {
 
 .experience-title {
   font-size: 20px;
-  margin: 0 0 6px 0;
+  margin: 0 0 10px 0;
 }
 
 .experience-heading {
-  font-size: 15px;
-  text-decoration: underline;
+  font-size: 13px;
+  font-weight: 500;
+  /* color: #FFEBF9; */
+  /* background-color: #2B3A4C; */
+  /* text-decoration: underline; */
+  border: 1px solid #2B3A4C;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 15px 0;
 }
 
 .experience-text {
   font-size: 15px;
   font-weight: 500;
-  line-height: 18px;
-  margin: 6px 0 0 0;
+  line-height: 19px;
+  margin: 10px 0 0 0;
 }
 
 .experience-line {
   border: 0.5px solid #2B3A4C;
 }
 
-.flower1-experience {
+/* .flower1-experience {
   height: 110px;
   position: absolute;
   margin: 50px 0px 0px 20px;
@@ -291,7 +297,7 @@ a:hover {
   height: 90px;
   position: absolute;
   margin: 450px 0px 0px 1310px;
-}
+} */
 
 .flower1-hello {
   height: 400px;
@@ -315,11 +321,6 @@ a:hover {
   font-size: 45px;
   color: #2B3A4C;
   margin: 0 0 10px 0;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
 }
 
 .link-image {
@@ -360,34 +361,131 @@ a:hover {
   padding: 7px;  
 }
 
-.start-button-wrapper {
+.start-button-wrapper, .contact-links {
   display: flex;
   justify-content: center;
 }
 
-.start-button:hover, .project-link:hover {
+.start-button:hover, .project-link:hover, .experience-heading:hover {
   background-color: #2B3A4C;
   color: #FFEBF9;
 }
 
+@media only screen and (max-width: 1300px) {
+  
+  .navitem, a {
+    font-size: 40px;
+  }
 
+  .flower1 {
+    height: 130px;
+    position: absolute;
+    margin: 80px 0px 0px 600px;
+  }
+
+  .flower2, .flower2-about, .flower2-projects, .flower4-experience {
+    display: none;
+  }
+
+  .flower1-hello {
+    height: 300px;
+    position: absolute;
+    margin: 200px 0px 0px 800px;
+  }
+
+  .flower1-hello2 {
+    height: 350px;
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    transform: rotate(-50deg);
+  }
+  
+  .icon {
+    margin: 40px 50px 15px 50px;
+    font-size: 55px;
+    color: #2B3A4C;
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  
+  .navitem, a {
+    font-size: 38px;
+  }
+
+}
 
 @media only screen and (max-width: 1100px) {
 
   .navitem, a {
-    font-size: 25px;
+    font-size: 35px;
   }
 
-  .flower2, .flower4, .flower4-experience, .flower1-hello2, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-hello, .flower1-about {
+  .flower1 {
+    height: 130px;
+    position: absolute;
+    margin: 80px 0px 0px 400px;
+  }
+
+  .flower2, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
     display: none;
+  }
+
+  .flower1-hello {
+    height: 250px;
+    position: absolute;
+    margin: 200px 0px 0px 750px;
+  }
+
+  .flower1-hello2 {
+    height: 300px;
+    position: absolute;
+    margin: 30px 0px 0px 40px;
+    transform: rotate(-50deg);
   }
 
   .hero-text, .custom-link {
     font-size: 40px;
   }
 
-  .profile-pic {
-    height: 100px;
+  .flower1 {
+    height: 130px;
+    position: absolute;
+    margin: 80px 0px 0px 800px;
   }
 
+  .flower3 {
+    height: 170px;
+    position: absolute;
+    margin: 400px 0px 0px 10px;
+  }
+
+  .profile-pic {
+    height: 400px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .icon {
+    margin: 30px 40px 5px 40px;
+    font-size: 55px;
+    color: #2B3A4C;
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  .navitem, a {
+    font-size: 30px;
+  }
+
+  .flower1-hello2, .flower1-hello {
+    display: none;
+  }
 }
