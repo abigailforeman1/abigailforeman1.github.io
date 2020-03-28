@@ -197,8 +197,9 @@ a:hover {
 }
 
 .project-img {
-  max-width: 450px;
+  width: 450px;
   margin: 20px 0;
+  align-self: center;
 }
 
 .project-text {
@@ -299,17 +300,17 @@ a:hover {
   margin: 450px 0px 0px 1310px;
 } */
 
-.flower1-hello {
-  height: 400px;
-  position: absolute;
-  margin: 200px 0px 0px 1000px;
-}
-
 .flower1-hello2 {
   height: 480px;
   position: absolute;
   margin: 0px 0px 0px 0px;
   transform: rotate(-50deg);
+}
+
+.flower1-hello {
+  height: 400px;
+  position: absolute;
+  margin: 200px 0px 0px 1000px;
 }
 
 .hello-wrapper {
@@ -371,8 +372,27 @@ a:hover {
   color: #FFEBF9;
 }
 
-@media only screen and (max-width: 1300px) {
-  
+
+/* Large screens */
+@media only screen and (min-width: 1920px) {
+
+  .flower4 {
+    height: 170px;
+    position: absolute;
+    margin: 600px 0px 0px 1500px;
+  }
+
+  .flower1-hello {
+    height: 400px;
+    position: absolute;
+    margin: 500px 0px 0px 1500px;
+  }
+
+}
+
+/* laptop screen at varying widths */
+@media only screen and (max-width: 1365px) {
+
   .navitem, a {
     font-size: 40px;
   }
@@ -409,8 +429,9 @@ a:hover {
 
 }
 
+/*
 @media only screen and (max-width: 1200px) {
-  
+
   .navitem, a {
     font-size: 38px;
   }
@@ -419,6 +440,9 @@ a:hover {
 
 @media only screen and (max-width: 1100px) {
 
+  body {
+    background-color: yellow;
+  }
   .navitem, a {
     font-size: 35px;
   }
@@ -477,15 +501,242 @@ a:hover {
     display: flex;
   }
 
-}
+} */
 
-@media only screen and (max-width: 1000px) {
+
+
+
+
+
+
+/* Tablets in landscape mode, older desktop monitors */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+  
+}
+  
+/* Tablets in portrait mode, large display smartphones landscape mode */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   
   .navitem, a {
-    font-size: 30px;
+    font-size: 28px;
   }
 
-  .flower1-hello2, .flower1-hello {
+  .hero-text, .custom-link {
+    font-size: 47px;
+    line-height: 60px;
+  }
+
+  .page-wrapper {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .small-text {
     display: none;
   }
+  
+  .profile-pic {
+    height: 400px;
+    align-self: center;
+    margin: 0 0 25px 0;
+  }
+
+  .project-info {
+    display: none;
+  }
+
+  .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
+    display: none;
+  }
+
+  .about-text-wrapper {
+    font-size: 15px;
+    margin: 25px 0 0 0;
+  }
+
+  .skill-icons {
+    margin: 0 20px;
+  }
+
+  .icon {
+    margin: 30px 40px 5px 40px;
+    font-size: 70px;
+    color: #2B3A4C;
+    display: flex;
+  }
+
+  .links {
+    display: flex;
+  }
+
+}
+  
+/* Smartphones in landscape mode */
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+
+  nav {
+    display: none;
+  }
+
+  .page-section {
+    padding: 15px;
+  }
+
+  .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
+    display: none;
+  }
+
+  .hero-text, .custom-link {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .wrapper {
+    margin: 100px;
+  }
+
+  .profile-pic {
+    align-self: center;
+  }
+
+  .page-wrapper {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .about-text-wrapper {
+    margin: 25px;
+    font-size: 20px;
+    width: 400px;
+  }
+
+  .small-text {
+    display: none;
+  }
+
+  .project-img {
+    width: 300px;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .project-info {
+    display: none;
+  }
+
+  .skill-icons {
+    margin: 0 50px;
+  }
+
+  .icon {
+    margin: 30px 40px 5px 40px;
+    font-size: 70px;
+    color: #2B3A4C;
+    display: flex;
+  }
+  
+  .projects-wrapper {
+    margin: 0px 20px;
+    flex-direction: row;
+
+  }
+
+  .project-box {
+    flex-direction: row;
+  }
+
+  .experience-wrapper {
+    margin: 0 80px;
+  }
+
+  .hello-wrapper {
+    margin: 100px;
+  }
+
+}
+
+/* Smartphones in portrait mode */
+@media only screen and (max-width: 420px) {
+
+  nav {
+    display: none;
+  }
+
+  .page-section {
+    padding: 15px;
+  }
+
+  .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
+    display: none;
+  }
+
+  .hero-text, .custom-link {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .wrapper {
+    margin: 100px;
+  }
+
+  .profile-pic {
+    align-self: center;
+  }
+
+  .page-wrapper {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .about-text-wrapper {
+    margin: 55px;
+    font-size: 15px;
+    width: 350px;
+  }
+
+  .small-text {
+    display: none;
+  }
+
+  .project-img {
+    width: 300px;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .project-info, .project-skills, .project-title {
+    display: none;
+  }
+
+  .skill-icons {
+    margin: 0 5px;
+  }
+
+  .icon {
+    margin: 20px 30px 5px 30px;
+    font-size: 50px;
+    color: #2B3A4C;
+    display: flex;
+  }
+  
+  .projects-wrapper {
+    margin: 0px 20px;
+  }
+
+  .project-box {
+    display: block;
+  }
+
+  .experience-wrapper {
+    margin: 0 40px;
+  }
+
+  .hello-wrapper {
+    margin: 100px;
+  }
+
 }
