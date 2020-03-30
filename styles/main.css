@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  /* background-color: #FFB14A; */
   background-image: linear-gradient(#FFB14A, #C97E91, #8EB0AE, #C9E491, #FFE976, #D6C3FF, #CDFFFF);
   font-family: arial;
   font-weight: 900;
@@ -57,6 +56,11 @@ a:hover {
 .hero, .about, .projects, .skills, .experience, .sayhello {
   width: 100%;
   display: flex;
+}
+
+/* hiding mobile title */
+.mobile-title {
+  display: none;
 }
 
 /* adding padding the height of the navbar to ensure all sections take up 100vh of screen */
@@ -261,9 +265,6 @@ a:hover {
 .experience-heading {
   font-size: 13px;
   font-weight: 500;
-  /* color: #FFEBF9; */
-  /* background-color: #2B3A4C; */
-  /* text-decoration: underline; */
   border: 1px solid #2B3A4C;
   border-radius: 10px;
   padding: 5px;
@@ -280,25 +281,6 @@ a:hover {
 .experience-line {
   border: 0.5px solid #2B3A4C;
 }
-
-/* .flower1-experience {
-  height: 110px;
-  position: absolute;
-  margin: 50px 0px 0px 20px;
-}
-
-.flower3-experience {
-  height: 80px;
-  position: absolute;
-  margin: 5px 0px 0px 1000px;
-  transform: rotate(-50deg);
-}
-
-.flower4-experience {
-  height: 90px;
-  position: absolute;
-  margin: 450px 0px 0px 1310px;
-} */
 
 .flower1-hello2 {
   height: 480px;
@@ -388,10 +370,19 @@ a:hover {
     margin: 500px 0px 0px 1500px;
   }
 
+  /* hiding mobile title */
+  .mobile-title {
+    display: none;
+  }
+
 }
 
-/* laptop screen at varying widths */
-@media only screen and (max-width: 1365px) {
+/* Tablets in landscape mode, older desktop monitors */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+  
+  .mobile-title, .flower2, .flower2-about, .flower2-projects, .flower4-experience {
+    display: none;
+  }
 
   .navitem, a {
     font-size: 40px;
@@ -401,10 +392,6 @@ a:hover {
     height: 130px;
     position: absolute;
     margin: 80px 0px 0px 600px;
-  }
-
-  .flower2, .flower2-about, .flower2-projects, .flower4-experience {
-    display: none;
   }
 
   .flower1-hello {
@@ -421,102 +408,21 @@ a:hover {
   }
   
   .icon {
-    margin: 40px 50px 15px 50px;
-    font-size: 55px;
+    margin: 40px 45px 15px 45px;
+    font-size: 65px;
     color: #2B3A4C;
     display: flex;
   }
 
-}
-
-/*
-@media only screen and (max-width: 1200px) {
-
-  .navitem, a {
-    font-size: 38px;
-  }
-
-}
-
-@media only screen and (max-width: 1100px) {
-
-  body {
-    background-color: yellow;
-  }
-  .navitem, a {
-    font-size: 35px;
-  }
-
-  .flower1 {
-    height: 130px;
-    position: absolute;
-    margin: 80px 0px 0px 400px;
-  }
-
-  .flower2, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
-    display: none;
-  }
-
-  .flower1-hello {
-    height: 250px;
-    position: absolute;
-    margin: 200px 0px 0px 750px;
-  }
-
-  .flower1-hello2 {
-    height: 300px;
-    position: absolute;
-    margin: 30px 0px 0px 40px;
-    transform: rotate(-50deg);
-  }
-
-  .hero-text, .custom-link {
-    font-size: 40px;
-  }
-
-  .flower1 {
-    height: 130px;
-    position: absolute;
-    margin: 80px 0px 0px 800px;
-  }
-
-  .flower3 {
-    height: 170px;
-    position: absolute;
-    margin: 400px 0px 0px 10px;
-  }
-
-  .profile-pic {
-    height: 400px;
-  }
-
-  .about-text {
-    font-size: 15px;
-  }
-
-  .icon {
-    margin: 30px 40px 5px 40px;
-    font-size: 55px;
-    color: #2B3A4C;
-    display: flex;
-  }
-
-} */
-
-
-
-
-
-
-
-/* Tablets in landscape mode, older desktop monitors */
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {
-  
 }
   
 /* Tablets in portrait mode, large display smartphones landscape mode */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   
+  .mobile-title, .small-text, .project-info, .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
+    display: none;
+  }
+
   .navitem, a {
     font-size: 28px;
   }
@@ -529,24 +435,13 @@ a:hover {
   .page-wrapper {
     flex-direction: column;
     margin: 0;
+    align-items: center;
   }
 
-  .small-text {
-    display: none;
-  }
-  
   .profile-pic {
-    height: 400px;
+    height: 500px;
     align-self: center;
     margin: 0 0 25px 0;
-  }
-
-  .project-info {
-    display: none;
-  }
-
-  .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
-    display: none;
   }
 
   .about-text-wrapper {
@@ -574,16 +469,30 @@ a:hover {
 /* Smartphones in landscape mode */
 @media only screen and (min-width: 421px) and (max-width: 767px) {
 
-  nav {
+  nav, .small-text, .project-info, .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
     display: none;
+  }
+
+  /* showing mobile title */
+  .mobile-title {
+    display: inline;
+    text-align: center;
+    font-size: 35px;
+    font-family: arial;
+    color: #FFEBF9;
+    background-color: #2B3A4C;
+    margin: 15px;
+    padding: 5px;
+    align-self: center;
+  }
+
+  .mobile-wrapper {
+    display: flex;
+    justify-content: center;
   }
 
   .page-section {
     padding: 15px;
-  }
-
-  .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
-    display: none;
   }
 
   .hero-text, .custom-link {
@@ -602,16 +511,13 @@ a:hover {
   .page-wrapper {
     flex-direction: column;
     margin: 0;
+    align-items: center;
   }
 
   .about-text-wrapper {
     margin: 25px;
     font-size: 20px;
-    width: 400px;
-  }
-
-  .small-text {
-    display: none;
+    width: 450px;
   }
 
   .project-img {
@@ -620,10 +526,6 @@ a:hover {
 
   .links {
     display: flex;
-  }
-
-  .project-info {
-    display: none;
   }
 
   .skill-icons {
@@ -640,7 +542,6 @@ a:hover {
   .projects-wrapper {
     margin: 0px 20px;
     flex-direction: row;
-
   }
 
   .project-box {
@@ -660,16 +561,30 @@ a:hover {
 /* Smartphones in portrait mode */
 @media only screen and (max-width: 420px) {
 
-  nav {
+  nav, .small-text, .project-info, .project-info, .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
     display: none;
+  }
+
+  /* showing mobile title */
+  .mobile-title {
+    display: inline;
+    text-align: center;
+    font-size: 35px;
+    font-family: arial;
+    color: #FFEBF9;
+    background-color: #2B3A4C;
+    margin: 20px;
+    padding: 5px;
+    align-self: center;
+  }
+
+  .mobile-wrapper {
+    display: flex;
+    justify-content: center;
   }
 
   .page-section {
     padding: 15px;
-  }
-
-  .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
-    display: none;
   }
 
   .hero-text, .custom-link {
@@ -678,44 +593,32 @@ a:hover {
   }
 
   .wrapper {
-    margin: 100px;
-  }
-
-  .profile-pic {
-    align-self: center;
+    margin: 60px;
   }
 
   .page-wrapper {
     flex-direction: column;
     margin: 0px;
+    align-items: center;
   }
 
   .about-text-wrapper {
-    margin: 55px;
-    font-size: 15px;
+    margin: 30px 55px;
     width: 350px;
   }
 
-  .small-text {
-    display: none;
+  .about-text {
+    font-size: 16px;
   }
-
-  .project-img {
-    width: 300px;
-  }
-
+  
   .links {
     display: flex;
   }
-
-  .project-info, .project-skills, .project-title {
-    display: none;
-  }
-
+  
   .skill-icons {
     margin: 0 5px;
   }
-
+  
   .icon {
     margin: 20px 30px 5px 30px;
     font-size: 50px;
@@ -723,20 +626,28 @@ a:hover {
     display: flex;
   }
   
+  .project-img {
+    width: 300px;
+  }
+
   .projects-wrapper {
     margin: 0px 20px;
   }
 
+  .project-text {
+    margin: 0;
+  }
+
   .project-box {
-    display: block;
+    display: inline;
   }
 
   .experience-wrapper {
-    margin: 0 40px;
+    margin: 10px 35px;
   }
 
   .hello-wrapper {
-    margin: 100px;
+    margin: 50px;
   }
 
 }

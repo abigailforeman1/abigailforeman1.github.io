@@ -42,8 +42,11 @@
     <div><img class="flower2-about" src="./assets/flower2-01.png" alt="flower"></div>
     <div><img class="flower1-about" src="./assets/flower-01.png" alt="flower"></div>
     <div class="page-wrapper">
+      <h1 class="mobile-title">ABOUT</h1>
+      <div>
         <img class="profile-pic" src="./assets/portfolio_pic.png" alt="photo of me in Wales">
-        <h4 class="small-text">Climbing Sugarloaf Mountain in Wales!</h4>
+        <p class="small-text">Climbing Sugarloaf Mountain in Wales!</p>
+      </div>
       <div class="about-text-wrapper">
         <p class="about-text">My passion for digital content creation and design led me to enrol in General Assembly’s
           Software Engineering Immersive programme. This amazing experience has opened my eyes to the endless
@@ -61,6 +64,9 @@
   </section>
   <!-- Skills -->
   <section class="skills, page-section" id="skills">
+    <div class="mobile-wrapper">
+      <h1 class="mobile-title">SKILLS</h1>
+    </div>
     <div class="skill-icons">
       <div class="skill-box">
         <i class="devicon-javascript-plain icon"></i>
@@ -144,6 +150,9 @@
     <div>
       <img class="flower4-projects" src="./assets/flower4-01.png" alt="flower">
     </div> -->
+    <div class="mobile-wrapper">
+      <h1 class="mobile-title">PROJECTS</h1>
+    </div>
     <div class="projects-wrapper">
       <div class="project-box">
         <img class="project-img" src="./assets/space.png" alt="spaceinvaders">
@@ -245,6 +254,9 @@
       <img class="flower4-experience" src="./assets/flower4-01.png" alt="flower">
     </div> -->
     <div class="experience-wrapper">
+      <div class="mobile-wrapper">
+        <h1 class="mobile-title">EXPERIENCE</h1>
+      </div>
       <div class="experience-block">
         <h1 class="experience-title">Software Engineering Immersive Student, December 2019 - March 2020</h1>
         <a class="experience-heading" target="_blank" href="https://generalassemb.ly/">General Assembly - London</a>
@@ -320,7 +332,7 @@
     </div>
   </section>
   <script>
-    ScrollReveal().reveal('.project-img', { duration: 1000, distance: '50px', delay: 400, reset: true });
+    ScrollReveal().reveal('.project-img', { duration: 1000, distance: '50px', delay: 400, reset: false });
   </script>
 </body>
 
