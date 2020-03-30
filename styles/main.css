@@ -469,8 +469,24 @@ a:hover {
 /* Smartphones in landscape mode */
 @media only screen and (min-width: 421px) and (max-width: 767px) {
 
-  nav, .small-text, .project-info, .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
+  nav, .small-text, .project-info, .flower2, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
     display: none;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .flower1 {
+    height: 110px;
+    margin: 5px;
+    text-align: center;
+    animation: rotation 6s infinite linear;
   }
 
   /* showing mobile title */
@@ -564,6 +580,8 @@ a:hover {
   nav, .small-text, .project-info, .project-info, .flower2, .flower1, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
     display: none;
   }
+
+  
 
   /* showing mobile title */
   .mobile-title {
