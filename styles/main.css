@@ -473,7 +473,7 @@ a:hover {
     display: none;
   }
 
-  @keyframes rotation {
+  /* @keyframes rotation {
     from {
       transform: rotate(0deg);
     }
@@ -487,7 +487,7 @@ a:hover {
     margin: 5px;
     text-align: center;
     animation: rotation 6s infinite linear;
-  }
+  } */
 
   /* showing mobile title */
   .mobile-title {
@@ -581,7 +581,7 @@ a:hover {
     display: none;
   }
 
-  @keyframes rotation {
+  /* @keyframes rotation {
     from {
       transform: rotate(0deg);
     }
@@ -595,7 +595,7 @@ a:hover {
     margin: 5px;
     text-align: center;
     animation: rotation 6s infinite linear;
-  }
+  } */
 
   /* showing mobile title */
   .mobile-title {
