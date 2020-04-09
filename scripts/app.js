@@ -1,13 +1,14 @@
 function init() {
 
-  var navText = document.querySelectorAll('.navtext')
-  var about = document.querySelector('#about')
-  // var skills = document.querySelector('#skills')
+  const navText = document.querySelectorAll('.navtext')
+  const about = document.querySelector('#about')
+  // console.log(about)
+  // const skills = document.querySelector('#skills')
 
   // Loop through and add the active class to the current/clicked link
-  for (var i = 0; i < navText.length; i++) {
+  for (let i = 0; i < navText.length; i++) {
     navText[i].addEventListener('click', function () {
-      var current = document.getElementsByClassName('active')
+      const current = document.getElementsByClassName('active')
 
       // If there's no active class
       if (current.length > 0) {
@@ -20,12 +21,21 @@ function init() {
   }
 
 
-  
 
 
-  // function activeHighlight(e) {
-  //   console.log(e.target)
-  // }
+
+  function isInViewport(elem) {
+    const distance = elem.getBoundingClientRect()
+    // console.log(distance)
+    console.log(elem)
+    return (
+      distance.top >= 0 &&
+      distance.left >= 0 &&
+      distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+    )
+  }
+
 
   window.addEventListener('scroll', function () {
     // console.log('scrolling')
@@ -36,19 +46,6 @@ function init() {
       console.log('nope')
     }
   }, false)
-
-  var isInViewport = function (elem) {
-    var distance = elem.getBoundingClientRect()
-    console.log(distance)
-    // console.log(elem)
-    return (
-      distance.top >= 0 &&
-      distance.left >= 0 &&
-      distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      distance.right <= (window.innerWidth || document.documentElement.clientWidth)
-    )
-  }
-
 
 
 }
