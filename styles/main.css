@@ -29,6 +29,7 @@ nav {
 /* link styling  */
 .active {
   font-style: italic;
+  color: #FFEBF9
 }
 
 a:hover {
@@ -356,9 +357,9 @@ a:hover {
 
 
 /* Large screens */
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1500px) {
 
-  .flower4 {
+  /* .flower4 {
     height: 170px;
     position: absolute;
     margin: 600px 0px 0px 1500px;
@@ -368,6 +369,10 @@ a:hover {
     height: 400px;
     position: absolute;
     margin: 500px 0px 0px 1500px;
+  } */
+
+  .small-text, .project-info, .project-info, .flower1, .flower2, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
+    display: none;
   }
 
   /* hiding mobile title */
