@@ -2,11 +2,7 @@ function init() {
 
   const navText = document.querySelectorAll('.navtext')
   const pageSections = [...document.querySelectorAll('.page-section')]
-  console.log(pageSections)
-
   const navLinks = [...document.querySelectorAll('.navtext')]
-  console.log(navLinks)
-
 
   // ! Function to add an active class to the nav link when it's clicked
 
@@ -24,8 +20,6 @@ function init() {
       this.className += ' active'
     })
   }
-
-
 
   // ! Function to check if a section is in viewport
 
