@@ -32,7 +32,7 @@ nav {
   color: #FFEBF9
 }
 
-a:hover {
+a:hover, mg-link:hover {
   color: #FFEBF9;
 }
 
@@ -81,8 +81,15 @@ a:hover {
   margin: 30px 0px 0px 0px;
 }
 
-.custom-link {
+.custom-link, .mg-link {
   text-decoration: underline;
+}
+
+.mg-link {
+  /* font-family: arial; */
+  font-weight: 900;
+  /* color: #2B3A4C; */
+  font-size: 20px;
 }
 
 .flower1 {
@@ -254,13 +261,17 @@ a:hover {
 }
 
 .experience-block {
-  margin: 12px 0 12px 0;
+  margin: 25px 0;
   color: #2B3A4C;
 }
 
 .experience-title {
-  font-size: 20px;
-  margin: 0 0 10px 0;
+  font-size: 23px;
+  margin: 15px 0px;
+}
+
+.experience-date {
+  font-size: 13px;
 }
 
 .experience-heading {
@@ -269,14 +280,14 @@ a:hover {
   border: 1px solid #2B3A4C;
   border-radius: 10px;
   padding: 5px;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .experience-text {
   font-size: 15px;
   font-weight: 500;
   line-height: 19px;
-  margin: 10px 0 0 0;
+  margin: 15px 0;
 }
 
 .experience-line {

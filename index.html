@@ -1,274 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Helloooooo</title>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Helloooooo</title>
-  <script type="text/javascript" src="scripts/app.js"></script>
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
-  <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-
-<body>
-  <!-- Nav -->
-  <nav>
-    <ul class="navbar" id="navbar">
-      <li class="navitem"><a class="navtext about-nav" href="#about">ABOUT</a></li>
-      <li class="navitem"><a class="navtext skills-nav" href="#skills">SKILLS</a></li>
-      <li class="navitem"><a class="navtext projects-nav" href="#projects">PROJECTS</a></li>
-      <li class="navitem"><a class="navtext experience-nav" href="#experience">EXPERIENCE</a></li>
-      <li class="navitem"><a class="navtext sayhello-nav" href="#sayhello">SAY HELLO!</a></li>
-    </ul>
-  </nav>
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div><img class="flower1" src="./assets/flower-01.png" alt="flower"></div>
-    <div><img class="flower2" src="./assets/flower2-01.png" alt="flower"></div>
-    <div><img class="flower3" src="./assets/flower3-01.png" alt="flower"></div>
-    <div><img class="flower4" src="./assets/flower4-01.png" alt="flower"></div>
-    <div class="wrapper">
-      <h1 class="hero-text">Hey, I’m Abi. I’m a Web Developer & Graphic Designer who loves
-        experimenting with shapes & colours. <a class="custom-link" href="mailto:abigail.foreman@outlook.com">Get in
-          touch!</a></h1>
-    </div>
-  </section>
-  <!-- About -->
-  <section class="about, page-section" id="about">
-    <div><img class="flower2-about" src="./assets/flower2-01.png" alt="flower"></div>
-    <div><img class="flower1-about" src="./assets/flower-01.png" alt="flower"></div>
-    <div class="page-wrapper">
-      <h1 class="mobile-title">a bit about me</h1>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <ul class="navbar" id="navbar">
+        <li class="navitem">
+          <a class="navtext about-nav" href="#about">ABOUT</a>
+        </li>
+        <li class="navitem">
+          <a class="navtext skills-nav" href="#skills">SKILLS</a>
+        </li>
+        <li class="navitem">
+          <a class="navtext projects-nav" href="#projects">PROJECTS</a>
+        </li>
+        <li class="navitem">
+          <a class="navtext experience-nav" href="#experience">EXPERIENCE</a>
+        </li>
+        <li class="navitem">
+          <a class="navtext sayhello-nav" href="#sayhello">SAY HELLO!</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Hero -->
+    <section class="hero" id="hero">
       <div>
-        <img class="profile-pic" src="./assets/portfolio_pic.png" alt="photo of me in Wales">
-        <p class="small-text">Climbing Sugarloaf Mountain in Wales!</p>
+        <img class="flower1" src="./assets/flower-01.png" alt="flower" />
       </div>
-      <div class="about-text-wrapper">
-        <p class="about-text">My passion for digital content creation and design led me to enrol in General Assembly’s
-          Software Engineering Immersive programme. This amazing experience has opened my eyes to the endless
-          possibilities of coding, developed my curiosity for problem solving and has given me confidence in my teamwork
-          and
-          leadership skills.</p>
-        <br />
-        <p class="about-text">I am now working as a teaching assistant for the next class of SEI students and building a
-          full-stack application to keep women safe at night. My ultimate goal is to work as a Web Developer at a
-          creative, forward-thinking company where I can combine my personal values with my ambition to learn.</p>
-        <br />
-        <p class="about-text">In my spare time I like to read about feminism, race and politics, go on camping trips,
-          create feminist illustrations and dance :)</p>
+      <div>
+        <img class="flower2" src="./assets/flower2-01.png" alt="flower" />
       </div>
-    </div>
-  </section>
-  <!-- Skills -->
-  <section class="skills, page-section" id="skills">
-    <div class="mobile-wrapper">
-      <h1 class="mobile-title">skills I've learnt</h1>
-    </div>
-    <div class="skill-icons">
-      <div class="skill-box">
-        <i class="devicon-javascript-plain icon"></i>
-        <p class="skills-title">JavaScript</p>
+      <div>
+        <img class="flower3" src="./assets/flower3-01.png" alt="flower" />
       </div>
-      <div class="skill-box">
-        <i class="devicon-html5-plain icon"></i>
-        <p class="skills-title">HTML5</p>
+      <div>
+        <img class="flower4" src="./assets/flower4-01.png" alt="flower" />
       </div>
-      <div class="skill-box">
-        <i class="devicon-css3-plain icon"></i>
-        <p class="skills-title">CSS3</p>
+      <div class="wrapper">
+        <h1 class="hero-text">
+          Hey, I’m Abi. I’m a Web Developer & Graphic Designer who loves
+          experimenting with shapes & colours.
+          <a class="custom-link" href="mailto:abigail.foreman@outlook.com"
+            >Get in touch!</a
+          >
+        </h1>
       </div>
-      <div class="skill-box">
-        <i class="devicon-react-original icon"></i>
-        <p class="skills-title">React</p>
+    </section>
+    <!-- About -->
+    <section class="about, page-section" id="about">
+      <div>
+        <img class="flower2-about" src="./assets/flower2-01.png" alt="flower" />
       </div>
-      <div class="skill-box">
-        <i class="devicon-visualstudio-plain icon"></i>
-        <p class="skills-title">VS Code</p>
+      <div>
+        <img class="flower1-about" src="./assets/flower-01.png" alt="flower" />
       </div>
-      <div class="skill-box">
-        <i class="devicon-express-original icon"></i>
-        <p class="skills-title">Express</p>
+      <div class="page-wrapper">
+        <h1 class="mobile-title">a bit about me</h1>
+        <div>
+          <img
+            class="profile-pic"
+            src="./assets/portfolio_pic.png"
+            alt="photo of me in Wales"
+          />
+          <p class="small-text">Climbing Sugarloaf Mountain in Wales!</p>
+        </div>
+        <div class="about-text-wrapper">
+          <p class="about-text">
+            My time spent as a Digital Content Creator opened my eyes to the
+            link between programming and design, and encouraged me to enrol in
+            General Assembly’s Software Engineering programme. This amazing
+            experience developed my curiosity for problem solving and gave me
+            confidence in my teamwork and leadership skills.
+          </p>
+          <br />
+          <p class="about-text">
+            I am currently a Teaching Assistant for the next class of SEI
+            students and working on side projects to further my skills. My
+            ultimate goal is to work as a Frontend Developer at a creative,
+            forward-thinking company where I can combine my personal values with
+            my passion to learn and create.
+          </p>
+          <br />
+          <p class="about-text">
+            In my spare time I run a feminist illustration business with my best
+            friend called Miss Gloria Design.
+            <span
+              ><a
+                class="mg-link"
+                href="https://www.instagram.com/missgloriadesign/"
+                target="_blank"
+                >Check it out here!</a
+              ></span
+            >
+          </p>
+        </div>
       </div>
-      <div class="skill-box">
-        <i class="devicon-mongodb-plain icon"></i>
-        <p class="skills-title">MongoDB</p>
+    </section>
+    <!-- Skills -->
+    <section class="skills, page-section" id="skills">
+      <div class="mobile-wrapper">
+        <h1 class="mobile-title">skills I've learnt</h1>
       </div>
-      <div class="skill-box">
-        <i class="devicon-git-plain icon"></i>
-        <p class="skills-title">Git</p>
+      <div class="skill-icons">
+        <div class="skill-box">
+          <i class="devicon-javascript-plain icon"></i>
+          <p class="skills-title">JavaScript</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-html5-plain icon"></i>
+          <p class="skills-title">HTML5</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-css3-plain icon"></i>
+          <p class="skills-title">CSS3</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-react-original icon"></i>
+          <p class="skills-title">React</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-visualstudio-plain icon"></i>
+          <p class="skills-title">VS Code</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-express-original icon"></i>
+          <p class="skills-title">Express</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-mongodb-plain icon"></i>
+          <p class="skills-title">MongoDB</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-git-plain icon"></i>
+          <p class="skills-title">Git</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-bootstrap-plain icon"></i>
+          <p class="skills-title">Bootstrap</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-python-plain icon"></i>
+          <p class="skills-title">Python</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-django-plain icon"></i>
+          <p class="skills-title">Django</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-github-plain icon"></i>
+          <p class="skills-title">Github</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-sass-original icon"></i>
+          <p class="skills-title">Sass</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-babel-plain icon"></i>
+          <p class="skills-title">Babel</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-nodejs-plain icon"></i>
+          <p class="skills-title">Node.js</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-heroku-plain icon"></i>
+          <p class="skills-title">Heroku</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-mocha-plain icon"></i>
+          <p class="skills-title">Mocha</p>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-postgresql-plain icon"></i>
+          <p class="skills-title">PostgreSQL</p>
+        </div>
       </div>
-      <div class="skill-box">
-        <i class="devicon-bootstrap-plain icon"></i>
-        <p class="skills-title">Bootstrap</p>
-      </div>
-      <div class="skill-box">
-        <i class="devicon-python-plain icon"></i>
-        <p class="skills-title">Python</p>
-      </div>
-      <div class="skill-box">
-        <i class="devicon-django-plain icon"></i>
-        <p class="skills-title">Django</p>
-      </div>
-      <div class="skill-box">
-        <i class="devicon-github-plain icon"></i>
-        <p class="skills-title">Github</p>
-      </div>
-      <div class="skill-box">
-        <i class="devicon-sass-original icon"></i>
-        <p class="skills-title">Sass</p>
-      </div>
-      <div class="skill-box">
-        <i class="devicon-babel-plain icon"></i>
-        <p class="skills-title">Babel</p>
-      </div>
-      <div class="skill-box">
-        <i class="devicon-nodejs-plain icon"></i>
-        <p class="skills-title">Node.js</p>
-      </div>
-      <div class="skill-box">
-        <i class="devicon-heroku-plain icon"></i>
-        <p class="skills-title">Heroku</p>
-      </div>
-      <div class="skill-box">
-        <i class="devicon-mocha-plain icon"></i>
-        <p class="skills-title">Mocha</p>
-      </div>
-      <div class="skill-box">
-        <i class="devicon-postgresql-plain icon"></i>
-        <p class="skills-title">PostgreSQL</p>
-      </div>
-    </div>
-  </section>
-  <!-- Projects -->
-  <section class="projects, page-section" id="projects">
-    <!-- <div>
+    </section>
+    <!-- Projects -->
+    <section class="projects, page-section" id="projects">
+      <!-- <div>
       <img class="flower2-projects" src="./assets/flower2-01.png" alt="flower">
     </div>
     <div>
       <img class="flower4-projects" src="./assets/flower4-01.png" alt="flower">
     </div> -->
-    <div class="mobile-wrapper">
-      <h1 class="mobile-title">my projects</h1>
-    </div>
-    <div class="projects-wrapper">
-      <div class="project-box">
-        <img class="project-img" src="./assets/space.png" alt="spaceinvaders">
-        <div class="project-text">
-          <h1 class="project-title">Space Invaders</h1>
-          <br />
-          <h2 class="project-skills">HTML, CSS, JavaScript</h2>
-          <br />
-          <p class="project-info">I chose to build the classic arcade game Space Invaders for my first solo project with
-            HTML, CSS and Vanilla JavaScript. This lasted 9 days and utilised array movement on a grid, set intervals
-            and local storage for score keeping.</p>
-          <br />
-          <div class="links">
-            <a class="project-link" target="_blank" href="https://spaceinvaders-project1.herokuapp.com/">Open
-              project</a>
-            <a class="project-link" target="_blank" href="https://github.com/abigailforeman1/sei-project-1">View on
-              Github</a>
+      <div class="mobile-wrapper">
+        <h1 class="mobile-title">my projects</h1>
+      </div>
+      <div class="projects-wrapper">
+        <div class="project-box">
+          <img
+            class="project-img"
+            src="./assets/pacman_screenshot.png"
+            alt="pacman game"
+          />
+          <div class="project-text">
+            <h1 class="project-title">Pac-Man</h1>
+            <br />
+            <h2 class="project-skills">HTML, CSS, JavaScript</h2>
+            <br />
+            <p class="project-info">
+              After finishing my coding course and beginning my role as teaching
+              assistant at GA, I wanted to push myself further while my students
+              began their first projects. I decided to build Pac-Man in Vanilla
+              JavaScript and utilise my learnings from a very casual p5 course I
+              was taking on Instagram TV. I decided I wanted my ghost movement
+              to be random but had to work out the logic for only picking their
+              new direction from the possible directions available to them (ie.
+              not where a wall was placed). I added sound effects, music and a
+              few extra features to add a personal touch.
+            </p>
+            <br />
+            <div class="links">
+              <a
+                class="project-link"
+                target="_blank"
+                href="http://abigailforeman.co.uk/pacman-game-js/"
+                >Open project</a
+              >
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://github.com/abigailforeman1/pacman-game-js"
+                >View on Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img class="project-img" src="./assets/profile.png" alt="beehive" />
+          <div class="project-text">
+            <h1 class="project-title">Beehive</h1>
+            <br />
+            <h2 class="project-skills">
+              JavaScript, React, Node.js, Express, Bulma
+            </h2>
+            <br />
+            <p class="project-info">
+              My team of 4 built a full stack MERN app in 1 week called Beehive,
+              which allows users within the creative industry to search for
+              projects and other creatives to collaborate with. My main
+              responsibilities were building the project and user backend model
+              components, creating better error handling, helping to build the
+              frontend homepage, user profile page, project profile page and
+              search page and leading the team with styling.
+            </p>
+            <br />
+            <div class="links">
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://beehive-project-3.herokuapp.com"
+                >Open project</a
+              >
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://github.com/abigailforeman1/sei-project-3"
+                >View on Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img
+            class="project-img"
+            src="./assets/interviewscreenshot.png"
+            alt="interview story"
+          />
+          <div class="project-text">
+            <h1 class="project-title">Interview Story</h1>
+            <br />
+            <h2 class="project-skills">
+              Python, Django, Create React, JavaScript, Bootstrap
+            </h2>
+            <br />
+            <p class="project-info">
+              In a team of 2, we built a full stack application that allows
+              users to experience a Junior Developer interview that combines
+              both luck and Boolean logic to determine if they are successful or
+              not. My main responsibilities were building the backend
+              functionality with Django and Python, styling the website with
+              Bootstrap and building the frontend user profile pages and user
+              edit page with React. This project lasted for 1 week.
+            </p>
+            <br />
+            <div class="links">
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://interview-story-project4.herokuapp.com"
+                >Open project</a
+              >
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://github.com/abigailforeman1/sei-project-4"
+                >View on Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img
+            class="project-img"
+            src="./assets/cocktail.png"
+            alt="cocktail club"
+          />
+          <div class="project-text">
+            <h1 class="project-title">The Cocktail Club</h1>
+            <br />
+            <h2 class="project-skills">JavaScript, React.js, Bulma</h2>
+            <br />
+            <p class="project-info">
+              My first pair-programming project was completed in 48 hours and
+              consumed a public API called TheCocktailDB. Together we planned
+              and built our React app which allowed users to search for
+              cocktails and see an ingredients list and recipes. I focused on
+              building out the frontend components, styling with Bulma and Sass,
+              and the implementation of a cocktail randomiser feature that
+              allowed users to find their ‘cocktail special’.
+            </p>
+            <br />
+            <div class="links">
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://the-cocktail-club.herokuapp.com/"
+                >Open project</a
+              >
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://github.com/abigailforeman1/sei-project-2"
+                >View on Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img
+            class="project-img"
+            src="./assets/space.png"
+            alt="spaceinvaders"
+          />
+          <div class="project-text">
+            <h1 class="project-title">Space Invaders</h1>
+            <br />
+            <h2 class="project-skills">HTML, CSS, JavaScript</h2>
+            <br />
+            <p class="project-info">
+              I chose to build the classic arcade game Space Invaders for my
+              first solo project with HTML, CSS and Vanilla JavaScript. This
+              lasted 9 days and utilised array movement on a grid, set intervals
+              and local storage for score keeping.
+            </p>
+            <br />
+            <div class="links">
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://spaceinvaders-project1.herokuapp.com/"
+                >Open project</a
+              >
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://github.com/abigailforeman1/sei-project-1"
+                >View on Github</a
+              >
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="project-box">
-        <img class="project-img" src="./assets/cocktail.png" alt="cocktail club">
-        <div class="project-text">
-          <h1 class="project-title">The Cocktail Club</h1>
-          <br />
-          <h2 class="project-skills">JavaScript, React.js, Bulma</h2>
-          <br />
-          <p class="project-info">My first pair-programming project was completed in 48 hours and consumed a public API
-            called TheCocktailDB. Together we planned and built our React app which allowed users to search for
-            cocktails and see an ingredients list and recipes. I focused on building out the frontend components,
-            styling with Bulma and Sass, and the implementation of a cocktail randomiser feature that allowed users to
-            find their ‘cocktail special’.</p>
-          <br />
-          <div class="links">
-            <a class="project-link" target="_blank" href="https://the-cocktail-club.herokuapp.com/">Open
-              project</a>
-            <a class="project-link" target="_blank" href="https://github.com/abigailforeman1/sei-project-2">View on
-              Github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-box">
-        <img class="project-img" src="./assets/profile.png" alt="beehive">
-        <div class="project-text">
-          <h1 class="project-title">Beehive</h1>
-          <br />
-          <h2 class="project-skills">JavaScript, React, Node.js, Express, Bulma</h2>
-          <br />
-          <p class="project-info">My team of 4 built a full stack MERN app in 1 week called Beehive, which allows users
-            within the creative industry to search for projects and other creatives to collaborate with. My main
-            responsibilities were building the project and user backend model components, creating better error
-            handling, helping to build the frontend homepage, user profile page, project profile page and search page
-            and leading the team with styling.</p>
-          <br />
-          <div class="links">
-            <a class="project-link" target="_blank" href="https://beehive-project-3.herokuapp.com">Open
-              project</a>
-            <a class="project-link" target="_blank" href="https://github.com/abigailforeman1/sei-project-3">View on
-              Github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-box">
-        <img class="project-img" src="./assets/interviewscreenshot.png" alt="interview story">
-        <div class="project-text">
-          <h1 class="project-title">Interview Story</h1>
-          <br />
-          <h2 class="project-skills">Python, Django, Create React, JavaScript, Bootstrap</h2>
-          <br />
-          <p class="project-info">In a team of 2, we built a full stack application that allows users to experience a
-            Junior Developer interview that combines both luck and Boolean logic to determine if they are successful or
-            not. My main responsibilities were building the backend functionality with Django and Python, styling the
-            website with Bootstrap and building the frontend user profile pages and user edit page with React. This
-            project lasted for 1 week.</p>
-          <br />
-          <div class="links">
-            <a class="project-link" target="_blank" href="https://interview-story-project4.herokuapp.com">Open
-              project</a>
-            <a class="project-link" target="_blank" href="https://github.com/abigailforeman1/sei-project-4">View on
-              Github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-box">
-        <img class="project-img" src="./assets/pacman_screenshot.png" alt="pacman game">
-        <div class="project-text">
-          <h1 class="project-title">Pac-Man</h1>
-          <br />
-          <h2 class="project-skills">HTML, CSS, JavaScript</h2>
-          <br />
-          <p class="project-info">After finishing my coding course and beginning my role as teaching assistant at GA, I
-            wanted to push myself further while my students began their first projects. I decided to build Pac-Man in
-            Vanilla JavaScript and utilise my learnings from a very casual p5 course I was taking on Instagram TV. I
-            decided I wanted my ghost movement to be random but had to work out the logic for only picking their new
-            direction from the possible directions available to them (ie. not where a wall was placed). I added sound
-            effects, music and a few extra features to add a personal touch.</p>
-          <br />
-          <div class="links">
-            <a class="project-link" target="_blank" href="http://abigailforeman.co.uk/pacman-game-js/">Open
-              project</a>
-            <a class="project-link" target="_blank" href="https://github.com/abigailforeman1/pacman-game-js">View on
-              Github</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- Experience -->
-  <section class="experience, page-section" id="experience">
-    <!-- <div>
+    </section>
+    <!-- Experience -->
+    <section class="experience, page-section" id="experience">
+      <!-- <div>
       <img class="flower1-experience" src="./assets/flower-01.png" alt="flower">
     </div>
     <div>
@@ -277,87 +403,188 @@
     <div>
       <img class="flower4-experience" src="./assets/flower4-01.png" alt="flower">
     </div> -->
-    <div class="experience-wrapper">
-      <div class="mobile-wrapper">
-        <h1 class="mobile-title">previous experience</h1>
+      <div class="experience-wrapper">
+        <div class="mobile-wrapper">
+          <h1 class="mobile-title">previous experience</h1>
+        </div>
+        <div class="experience-block">
+          <h1 class="experience-title">
+            SEI Teaching Assistant | March 2020 - June 2020
+          </h1>
+          <a
+            class="experience-heading"
+            target="_blank"
+            href="https://generalassemb.ly/"
+            >General Assembly - London</a
+          >
+          <p class="experience-text">
+            At the end of my course, I was lucky enough to be selected as a
+            Teaching Assistant for the next Software Engineering programme at
+            General Assembly. Over the 3 months, I am supporting the students
+            with their learning, marking homework, helping them to debug
+            problems and find solutions, and share resources and create content
+            to help them learn. I am also there for emotional support as someone
+            who has recently been through the process and understands the
+            intensity of the course.
+          </p>
+        </div>
+        <hr class="experience-line" />
+        <div class="experience-block">
+          <h1 class="experience-title">
+            Software Engineering Immersive Student | December 2019 - March 2020
+          </h1>
+          <a
+            class="experience-heading"
+            target="_blank"
+            href="https://generalassemb.ly/"
+            >General Assembly - London</a
+          >
+          <p class="experience-text">
+            As a SEI student at General Assembly, I learnt to build interactive,
+            full stack apps with key programming languages and frameworks over
+            the 12-week course. I developed my problem-solving skills by working
+            through solutions with team members using Scrum and Agile
+            methodologies, and overcame challenges independently when developing
+            by myself. I also gained experience with algorithms, data
+            structures, APIs and design patterns, which gave me a deeper
+            understanding of the languages covered in class.
+          </p>
+        </div>
+        <hr class="experience-line" />
+        <div class="experience-block">
+          <h1 class="experience-title">
+            Co-founder and Illustrator | October 2017 - Present
+          </h1>
+          <a
+            class="experience-heading"
+            target="_blank"
+            href="https://www.instagram.com/missgloriadesign/"
+            >Miss Gloria Design - London</a
+          >
+          <p class="experience-text">
+            Co-founder and designer at Miss Gloria Design - a feminist
+            illustration Instagram account that focuses on female empowerment,
+            self-love, body positivity, period poverty and mental health. We
+            started Miss Gloria after leaving University in 2017, which was
+            around the same time as the #metoo movement went viral online. We
+            were feeling extremely frustrated but also empowered to do something
+            about it. We have now worked with clients such as Vogue, Coppafeel,
+            Missguided, ELLE, World Child Cancer and in 2019 we brought out a
+            self-love clothing and accessories range with Primark, which was
+            available globally across all their flagship stores.
+          </p>
+        </div>
+        <hr class="experience-line" />
+        <div class="experience-block">
+          <h1 class="experience-title">
+            Junior Digital Executive | February 2018 - November 2019
+          </h1>
+          <a
+            class="experience-heading"
+            target="_blank"
+            href="https://zerotwenty.co.uk/"
+            >zero twenty & Percolate - London</a
+          >
+          <p class="experience-text">
+            Managed the social platforms for a number of clients involving
+            content creation, copywriting, scheduling and feedback using social
+            analytics. Led the creative marketing for the Kerb music festival
+            ‘Jam on Rye’ which sold 3,500 tickets and engaged 1.2 million users
+            on social media. Mentored social media and marketing interns.
+          </p>
+        </div>
+        <hr class="experience-line" />
+        <div class="experience-block">
+          <h1 class="experience-title">
+            Freelance Digital Content Creator | January 2018 - July 2019
+          </h1>
+          <a
+            class="experience-heading"
+            target="_blank"
+            href="https://brainchildfestival.co.uk/"
+            >Brainchild Festival - East Sussex</a
+          >
+          <p class="experience-text">
+            Worked alongside the Marketing Manager and collaborated with other
+            designers to deliver fun and engaging social media graphics and GIFs
+            using the festival’s brand guidelines.
+          </p>
+        </div>
+        <hr class="experience-line" />
+        <div class="experience-block">
+          <h1 class="experience-title">
+            Freelance Graphic Designer | June 2018 - June 2019
+          </h1>
+          <a
+            class="experience-heading"
+            target="_blank"
+            href="https://www.femmeculture.com/"
+            >femme culture - London</a
+          >
+          <p class="experience-text">
+            Designed posters and social media assets for the emerging record
+            label’s club nights. Designed the 2019 Heforshe x UN Women x femme
+            culture compilation artwork that calls for people to stand together
+            to create a bold force for gender equality.
+          </p>
+        </div>
       </div>
-      <div class="experience-block">
-        <h1 class="experience-title">Software Engineering Immersive Student, December 2019 - March 2020</h1>
-        <a class="experience-heading" target="_blank" href="https://generalassemb.ly/">General Assembly - London</a>
-        <p class="experience-text">As a SEI student at General Assembly, I learnt to build interactive, full stack apps
-          with key programming languages and frameworks over the 12-week course. I developed my problem-solving skills
-          by
-          working through solutions with team members using Scrum and Agile methodologies, and overcame challenges
-          independently when developing by myself. I also gained experience with algorithms, data structures, APIs and
-          design patterns, which gave me a deeper understanding of the languages covered in class.</p>
+    </section>
+    <!-- Hello -->
+    <section class="sayhello, page-section" id="sayhello">
+      <div>
+        <img class="flower1-hello" src="./assets/flower-01.png" alt="flower" />
       </div>
-      <hr class="experience-line" />
-      <div class="experience-block">
-        <h1 class="experience-title">Co-founder and Illustrator, October 2017 - Present</h1>
-        <a class="experience-heading" target="_blank" href="https://www.instagram.com/missgloriadesign/">Miss Gloria
-          Design - London</a>
-        <p class="experience-text">Set up a feminist design Instagram account that features illustrations about female
-          empowerment, self-love, body positivity, period poverty and mental health. Clients include Primark, Vogue,
-          Missguided, ELLE, World Child Cancer and AFSP.</p>
+      <div>
+        <img class="flower1-hello2" src="./assets/flower-01.png" alt="flower" />
       </div>
-      <hr class="experience-line" />
-      <div class="experience-block">
-        <h1 class="experience-title">Junior Digital Executive, February 2018 - November 2019</h1>
-        <a class="experience-heading" target="_blank" href="https://zerotwenty.co.uk/">zero twenty & Percolate -
-          London</a>
-        <p class="experience-text">Managed the social platforms for a number of clients involving content creation,
-          copywriting, scheduling and feedback using social analytics. Led the creative marketing for the Kerb music
-          festival ‘Jam on Rye’ which sold 3,500 tickets and engaged 1.2 million users on social media. Mentored social
-          media and marketing interns.</p>
+      <div class="hello-wrapper">
+        <h1 class="hello-title">get in touch</h1>
+        <div class="contact-links">
+          <a href="mailto:abigail.foreman@outlook.com" target="_blank">
+            <img
+              class="link-image"
+              src="./assets/email-01.png"
+              alt="email icon"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abigail-foreman-11b541b7/"
+            target="_blank"
+          >
+            <img
+              class="link-image"
+              src="./assets/linkedin-01.png"
+              alt="linkedin icon"
+            />
+          </a>
+          <a href="https://github.com/abigailforeman1" target="_blank">
+            <img
+              class="link-image"
+              src="./assets/github-01.png"
+              alt="github icon"
+            />
+          </a>
+          <a href="https://twitter.com/AbigailForeman1" target="_blank">
+            <img
+              class="link-image"
+              src="./assets/twitter-01.png"
+              alt="twitter icon"
+            />
+          </a>
+        </div>
       </div>
-      <hr class="experience-line" />
-      <div class="experience-block">
-        <h1 class="experience-title">Freelance Digital Content Creator, January 2018 - July 2019</h1>
-        <a class="experience-heading" target="_blank" href="https://brainchildfestival.co.uk/">Brainchild Festival -
-          East Sussex</a>
-        <p class="experience-text">Worked alongside the Marketing Manager and collaborated with other designers to
-          deliver
-          fun and engaging social media graphics and GIFs using the festival’s brand guidelines.</p>
+      <div class="start-button-wrapper">
+        <a class="start-button" href="#hero">back to the top</a>
       </div>
-      <hr class="experience-line" />
-      <div class="experience-block">
-        <h1 class="experience-title">Freelance Graphic Designer, June 2018 - June 2019</h1>
-        <a class="experience-heading" target="_blank" href="https://www.femmeculture.com/">femme culture - London</a>
-        <p class="experience-text">Designed posters and social media assets for the emerging record label’s club nights.
-          Designed the 2019 Heforshe x UN Women x femme culture compilation artwork that calls for people to stand
-          together
-          to create a bold force for gender equality.</p>
-      </div>
-    </div>
-  </section>
-  <!-- Hello -->
-  <section class="sayhello, page-section" id="sayhello">
-    <div><img class="flower1-hello" src="./assets/flower-01.png" alt="flower"></div>
-    <div><img class="flower1-hello2" src="./assets/flower-01.png" alt="flower"></div>
-    <div class="hello-wrapper">
-      <h1 class="hello-title">get in touch</h1>
-      <div class="contact-links">
-        <a href="mailto:abigail.foreman@outlook.com" target="_blank">
-          <img class="link-image" src="./assets/email-01.png" alt="email icon">
-        </a>
-        <a href="https://www.linkedin.com/in/abigail-foreman-11b541b7/" target="_blank">
-          <img class="link-image" src="./assets/linkedin-01.png" alt="linkedin icon">
-        </a>
-        <a href="https://github.com/abigailforeman1" target="_blank">
-          <img class="link-image" src="./assets/github-01.png" alt="github icon">
-        </a>
-        <a href="https://twitter.com/AbigailForeman1" target="_blank">
-          <img class="link-image" src="./assets/twitter-01.png" alt="twitter icon">
-        </a>
-      </div>
-    </div>
-    <div class="start-button-wrapper">
-      <a class="start-button" href="#hero">back to the top</a>
-    </div>
-  </section>
-  <script>
-    ScrollReveal().reveal('.project-img', {duration: 1000, distance: '50px', delay: 400, reset: false});
-  </script>
-</body>
-
+    </section>
+    <script>
+      ScrollReveal().reveal('.project-img', {
+        duration: 1000,
+        distance: '50px',
+        delay: 400,
+        reset: false
+      })
+    </script>
+  </body>
 </html>
