@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(#FFB14A, #C97E91, #8EB0AE, #C9E491, #FFE976, #D6C3FF, #CDFFFF);
+  background-image: linear-gradient(#FFB14A, #C97E91, rgb(139, 226, 220), #C9E491, #FFE976, #D6C3FF, #CDFFFF);
   font-family: arial;
   font-weight: 900;
   /* cursor: url(../assets/favicon.png), auto; */
@@ -196,10 +196,50 @@ a:hover, mg-link:hover {
   color: #2B3A4C;
 }
 
+.projects-toggle-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.web-apps-button, .design-work-button {
+  margin: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.active-button {
+  border: 1px solid #2B3A4C;
+  background-color: #2B3A4C;
+  color: #FFEBF9;
+}
+
+.inactive-button {
+  border: 1px solid rgba(43, 58, 76, 0.300);
+  background-color: rgba(43, 58, 76, 0.300);
+  color: rgba(255, 235, 249, 0.493);
+}
+
+.hide {
+  display: none;
+}
+
 .projects-wrapper {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 80px;
+}
+
+.design-work-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.design-image {
+  width: 280px;
+  margin: 15px;
 }
 
 .project-box {

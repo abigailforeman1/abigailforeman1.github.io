@@ -2,6 +2,32 @@ function init () {
   const navText = document.querySelectorAll('.navtext')
   const pageSections = [...document.querySelectorAll('.page-section')]
   const navLinks = [...document.querySelectorAll('.navtext')]
+  const webAppsButton = document.querySelector('.web-apps-button')
+  const designWorkButton = document.querySelector('.design-work-button')
+  const webApps = document.querySelector('.web-apps')
+  const designWork = document.querySelector('.design-work')
+
+  function showWebApps() {
+    designWork.classList.add('hide')
+    webApps.classList.remove('hide')
+
+    webAppsButton.classList.remove('inactive-button')
+    webAppsButton.classList.add('active-button')
+
+    designWorkButton.classList.remove('active-button')
+    designWorkButton.classList.add('inactive-button')
+  }
+
+  function showDesignWork() {
+    webApps.classList.add('hide')
+    designWork.classList.remove('hide')
+    
+    webAppsButton.classList.remove('active-button')
+    webAppsButton.classList.add('inactive-button')
+
+    designWorkButton.classList.remove('inactive-button')
+    designWorkButton.classList.add('active-button')
+  }
 
   // ! Function to add an active class to the nav link when it's clicked
 
@@ -47,6 +73,10 @@ function init () {
       }
     })
   })
+
+  webAppsButton.addEventListener('click', showWebApps)
+  designWorkButton.addEventListener('click', showDesignWork)
+
 }
 
 window.addEventListener('DOMContentLoaded', init)
