@@ -26,25 +26,9 @@ function init () {
 
   function isInViewport (elem) {
     const distance = elem.getBoundingClientRect()
-
-    // const numbers = []
-    // for (let i = distance.top; i <= distance.bottom; i++) {
-    //   numbers.push(i)
-    // }
-    // console.log(numbers)
-
-    // numbers.some(number => {
-    //   return console.log(number >= 0 && number <= window.innerHeight)
-    // })
-
-    // console.log('distance', elem, distance)
-    // console.log(window.innerHeight)
-    // console.log('distance.bottom', elem, distance.bottom)
-
     // if numbers is greater or equal to 0 or less than or equal to window.innerHeight
-
     return (
-      distance.top >= 0 && distance.top <= window.innerHeight
+      distance.top >= 0 
     // distance.bottom <= (window.innerHeight || document.documentElement.clientHeight)
     )
   }
@@ -52,20 +36,14 @@ function init () {
   // * this event listener is added to window scrolling and checks if isInViewport function returns true or false
 
   window.addEventListener('scroll', function () {
-    // navLinks.forEach(navLink => navLink.classList.remove('active'))
+    navLinks.forEach(navLink => navLink.classList.add('active'))
 
     pageSections.filter(pageSection => {
-      // console.log('1', window.innerHeight)
-      // console.log('2', document.documentElement.clientHeight)
       if (isInViewport(pageSection)) {
-        // console.log(isInViewport(pageSection))
-        // console.log(pageSection.id, 'NOT in viewport!')
-        navLinks[pageSections.indexOf(pageSection)].classList.add('active')
+        navLinks[pageSections.indexOf(pageSection)].classList.remove('active')
         return
       } else {
-        // console.log(isInViewport(pageSection))
-        // console.log(pageSection.id, 'is in viewport')
-        navLinks[pageSections.indexOf(pageSection)].classList.remove('active')
+        navLinks[pageSections.indexOf(pageSection)].classList.add('active')
       }
     })
   })
