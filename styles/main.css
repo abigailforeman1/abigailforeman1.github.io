@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display+SC:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -78,16 +80,18 @@ a:hover, mg-link:hover {
 .hero-text {
   color: #2B3A4C;
   font-size: 45px;
+  line-height: 55px;
   margin: 30px 0px 0px 0px;
 }
 
-.custom-link, .mg-link {
-  text-decoration: underline;
+.custom-link {
+  font-family: 'Homemade Apple', cursive;
 }
 
 .mg-link {
-  /* font-family: arial; */
+  font-family: arial;
   font-weight: 900;
+  text-decoration: underline;
   /* color: #2B3A4C; */
   font-size: 20px;
 }
@@ -159,6 +163,15 @@ a:hover, mg-link:hover {
   font-size: 20px;
 }
 
+.first-line {
+  /* background-color: #2B3A4C; */
+  /* font-family: 'Playfair Display SC', serif; */
+  font-family: 'Homemade Apple', cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  /* color: #FFEBF9; */
+}
+
 .profile-pic {
   height: 480px;
 }
@@ -202,17 +215,22 @@ a:hover, mg-link:hover {
 }
 
 .web-apps-button, .design-work-button {
-  margin: 5px;
-  font-size: 17px;
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 7px;
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 900;
+  /* border-radius: 10px; */
+  padding: 12px;
+}
+
+.web-apps-button:hover, .design-work-button:hover {
+  cursor: pointer;
 }
 
 .active-button {
   border: 1px solid #2B3A4C;
   background-color: #2B3A4C;
   color: #FFEBF9;
+  /* font-style: italic; */
 }
 
 .inactive-button {
@@ -223,6 +241,52 @@ a:hover, mg-link:hover {
 
 .hide {
   display: none;
+}
+
+.img-info {
+  position: absolute;
+  font-size: 15px;
+  color: #2B3A4C;
+  margin: 15px;
+  padding-top: 131.5px;
+  padding-bottom: 131.5px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 235, 249, 0.897);
+}
+
+.missgloria {
+  padding-left: 90.5px;
+  padding-right: 90.5px;
+}
+
+.everpress {
+  padding-left: 94.5px;
+  padding-right: 94px;
+}
+
+.presha {
+  padding-left: 108.5px;
+  padding-right: 109px;
+}
+
+.hiya {
+  padding-left: 123px;
+  padding-right: 123px;
+}
+
+.femme {
+  padding-left: 75.5px;
+  padding-right: 76px;
+}
+
+.brainchild {
+  padding-left: 93.5px;
+  padding-right: 93.5px;
+}
+
+.img-info:hover {
+  opacity: 1;
 }
 
 .projects-wrapper {
@@ -240,6 +304,7 @@ a:hover, mg-link:hover {
 .design-image {
   width: 280px;
   margin: 15px;
+  text-align: center;
 }
 
 .project-box {
@@ -353,6 +418,13 @@ a:hover, mg-link:hover {
 }
 
 .hello-title {
+  font-size: 45px;
+  color: #2B3A4C;
+  margin: 0 0 10px 0;
+}
+
+.hello-title2 {
+  font-family: 'Homemade Apple', cursive;
   font-size: 45px;
   color: #2B3A4C;
   margin: 0 0 10px 0;
@@ -550,9 +622,11 @@ a:hover, mg-link:hover {
     display: inline;
     text-align: center;
     font-size: 25px;
-    font-family: arial;
-    color: #FFEBF9;
-    background-color: #2B3A4C;
+    /* font-family: arial; */
+    font-family: 'Homemade Apple', cursive;
+    color: #2B3A4C;
+    /* color: #FFEBF9; */
+    /* background-color: #2B3A4C; */
     margin: 15px;
     padding: 5px;
     align-self: center;
@@ -658,9 +732,11 @@ a:hover, mg-link:hover {
     display: inline;
     text-align: center;
     font-size: 25px;
-    font-family: arial;
-    color: #FFEBF9;
-    background-color: #2B3A4C;
+    /* font-family: arial; */
+    font-family: 'Homemade Apple', cursive;
+    color: #2B3A4C;
+    /* color: #FFEBF9; */
+    /* background-color: #2B3A4C; */
     margin: 20px;
     padding: 5px;
     align-self: center;
