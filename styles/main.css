@@ -312,12 +312,14 @@ a:hover, mg-link:hover {
   width: 280px;
   margin: 15px;
   text-align: center;
+  animation: fadein 1s
 }
 
 .project-box {
   display: flex;
   justify-content: center;
   margin: 10px;
+  animation: fadein 1s;
 }
 
 .project-img {
@@ -367,6 +369,14 @@ a:hover, mg-link:hover {
   position: absolute;
   margin: 300px 0px 0px 1000px;
 } */
+
+.desktop-title {
+  color: #2B3A4C;
+  margin: 0 0 10px 0;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 30px;
+  text-align: center;
+}
 
 .experience-wrapper {
   margin: 35px 150px;
