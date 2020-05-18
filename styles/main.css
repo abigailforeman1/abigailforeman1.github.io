@@ -85,21 +85,25 @@ a:hover, mg-link:hover {
 }
 
 .custom-link {
-  font-family: 'Homemade Apple', cursive;
+  text-decoration: underline;
 }
 
 .mg-link {
-  font-family: arial;
   font-weight: 900;
   text-decoration: underline;
-  /* color: #2B3A4C; */
   font-size: 20px;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .flower1 {
   height: 130px;
   position: absolute;
   margin: 100px 0px 0px 350px;
+  animation: fadein 1s;
 }
 
 .flower1-about {
@@ -112,6 +116,7 @@ a:hover, mg-link:hover {
   height: 180px;
   position: absolute;
   margin: 100px 0px 0px 1200px;
+  animation: fadein 4s;
 }
 
 .flower2-about {
@@ -124,12 +129,14 @@ a:hover, mg-link:hover {
   height: 170px;
   position: absolute;
   margin: 500px 0px 0px 10px;
+  animation: fadein 2s;
 }
 
 .flower4 {
   height: 170px;
   position: absolute;
   margin: 450px 0px 0px 900px;
+  animation: fadein 3s;
 }
 
 .title {
@@ -597,7 +604,7 @@ a:hover, mg-link:hover {
 /* Smartphones in landscape mode */
 @media only screen and (min-width: 421px) and (max-width: 767px) {
 
-  nav, .small-text, .project-info, .flower1, .flower2, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
+  nav, .small-text, .project-info, .flower1, .flower2, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about, .projects-toggle-buttons {
     display: none;
   }
 
@@ -707,7 +714,7 @@ a:hover, mg-link:hover {
 /* Smartphones in portrait mode */
 @media only screen and (max-width: 420px) {
 
-  nav, .small-text, .project-info, .project-info, .flower1, .flower2, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about {
+  nav, .small-text, .project-info, .project-info, .flower1, .flower2, .flower1-hello, .flower1-hello2, .flower3, .flower4, .flower4-experience, .flower2-about, .flower2-projects, .flower4-projects, .flower3-experience, .flower1-about, .projects-toggle-buttons {
     display: none;
   }
 
