@@ -173,8 +173,8 @@ a:hover, mg-link:hover {
 .first-line {
   /* background-color: #2B3A4C; */
   /* font-family: 'Playfair Display SC', serif; */
-  font-family: 'Homemade Apple', cursive;
-  font-size: 25px;
+  /* font-family: 'Homemade Apple', cursive; */
+  /* font-size: 25px; */
   font-weight: bolder;
   /* color: #FFEBF9; */
 }
@@ -441,7 +441,7 @@ a:hover, mg-link:hover {
 }
 
 .hello-title2 {
-  font-family: 'Homemade Apple', cursive;
+  /* font-family: 'Homemade Apple', cursive; */
   font-size: 45px;
   color: #2B3A4C;
   margin: 0 0 10px 0;
@@ -639,8 +639,8 @@ a:hover, mg-link:hover {
     display: inline;
     text-align: center;
     font-size: 25px;
-    /* font-family: arial; */
-    font-family: 'Homemade Apple', cursive;
+    font-family: arial;
+    /* font-family: 'Homemade Apple', cursive; */
     color: #2B3A4C;
     /* color: #FFEBF9; */
     /* background-color: #2B3A4C; */
@@ -749,8 +749,8 @@ a:hover, mg-link:hover {
     display: inline;
     text-align: center;
     font-size: 25px;
-    /* font-family: arial; */
-    font-family: 'Homemade Apple', cursive;
+    font-family: arial;
+    /* font-family: 'Homemade Apple', cursive; */
     color: #2B3A4C;
     /* color: #FFEBF9; */
     /* background-color: #2B3A4C; */
